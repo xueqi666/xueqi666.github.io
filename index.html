@@ -71,6 +71,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hadoop" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/09/28/hadoop/" class="article-date">
+  <time class="dt-published" datetime="2022-09-28T12:51:05.000Z" itemprop="datePublished">2022-09-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/09/28/hadoop/">hadoop</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        
+    </div>
+    <div class='spoiler-content'>
+        <p>#HADOOP_HOME<br>export  HADOOP_HOME&#x3D;&#x2F;opt&#x2F;module&#x2F;hadoop-3.1.3<br>export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin</p>
+<p>查看字数<br>hadoop jar share&#x2F;hadoop&#x2F;mapreduce&#x2F;hadoop-mapreduce-examples-3.1.3.jar wordcount a&#x2F;（输入路径） b（输出不能存在路径）</p>
+<p>&#x2F;opt&#x2F;profile.d<br>source &#x2F;etc&#x2F;profire</p>
+<p>关闭防火墙<br>systemctl stop firewalld </p>
+<p>文件（目录） 的上传或下载<br>hadoop fs -put 文件 上传的目录<br>hadoop fs -get 文件 下载的目录</p>
+<p>查看文件的大小<br>hadoop fs -du -s -h &#x2F;input<br>hadoop fs -du -h &#x2F;input （各个文件大小）</p>
+<p>拷贝<br>scp -r 文件 用户名@主机名：文件的地址<br>rsync -av xueqi@hadoop103:&#x2F;opt&#x2F;module&#x2F; .&#x2F; 同步命令</p>
+<p>ssh<br>先是生成公钥和私钥<br>ssh-keygen -t rsa<br>ssh-copy-id xxxx(主机名)</p>
+<p>hdfs namenode -format 重启硬盘 102<br>sbin&#x2F;start-dfs.sh   hadoop102:9870<br>sbin&#x2F;start-yarn.sh  hadoop103:8088<br>历史服务器 19888 102</p>
+<p>hadoop fs -mkdir &#x2F;wcinput 上传<br>Hadoop fs -put 要上传的文件 位置<br>hadoop fs -rm -r -skipTrash &#x2F;wcimput 删除文件</p>
+<p> mapred –daemon stop（start） historyserver 停止历史服务器
+ </p>
+
+    </div>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/09/28/hadoop/" data-id="cl8lmqii30002x85i0nhp6rsy" data-title="hadoop" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-git" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/09/28/git/" class="article-date">
@@ -108,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/28/git/" data-id="cl8llx0ri0000645i16gg2r37" data-title="git" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/28/git/" data-id="cl8lmqihv0000x85i1siw6njf" data-title="git" class="article-share-link">Share</a>
       
       
       
@@ -186,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/28/%E5%A4%A7%E6%95%B0%E6%8D%AE/" data-id="cl8llx0rv0001645ih1hr4zfr" data-title="大数据" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/28/%E5%A4%A7%E6%95%B0%E6%8D%AE/" data-id="cl8lmqii00001x85ifej47m1e" data-title="大数据" class="article-share-link">Share</a>
       
       
       
@@ -227,6 +284,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/09/28/hadoop/">hadoop</a>
+          </li>
         
           <li>
             <a href="/2022/09/28/git/">git</a>

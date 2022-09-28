@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2022/9 | Hexo</title>
+  <title>hadoop | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2022/09/index.html">
+  <meta name="description" content="#HADOOP_HOMEexport  HADOOP_HOME&#x3D;&#x2F;opt&#x2F;module&#x2F;hadoop-3.1.3export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin 查看字数hadoop jar share&#x2F;hadoop&#x2F;mapreduc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hadoop">
+<meta property="og:url" content="http://example.com/2022/09/28/hadoop/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#HADOOP_HOMEexport  HADOOP_HOME&#x3D;&#x2F;opt&#x2F;module&#x2F;hadoop-3.1.3export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin 查看字数hadoop jar share&#x2F;hadoop&#x2F;mapreduc">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-09-28T12:51:05.000Z">
+<meta property="article:modified_time" content="2022-09-28T12:53:27.325Z">
 <meta property="article:author" content="xueqi">
 <meta name="twitter:card" content="summary">
   
@@ -69,77 +73,71 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/09/28/hadoop/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-09-28T12:51:05.000Z" itemprop="datePublished">Sep 28</time>
+        <section id="main"><article id="post-hadoop" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/09/28/hadoop/" class="article-date">
+  <time class="dt-published" datetime="2022-09-28T12:51:05.000Z" itemprop="datePublished">2022-09-28</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/09/28/hadoop/">hadoop</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      hadoop
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/09/28/git/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-09-28T12:29:05.000Z" itemprop="datePublished">Sep 28</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/09/28/git/">git</a>
-    </h1>
-  
+        <div class='spoiler collapsed'>
+    <div class='spoiler-title'>
+        
+    </div>
+    <div class='spoiler-content'>
+        <p>#HADOOP_HOME<br>export  HADOOP_HOME&#x3D;&#x2F;opt&#x2F;module&#x2F;hadoop-3.1.3<br>export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin</p>
+<p>查看字数<br>hadoop jar share&#x2F;hadoop&#x2F;mapreduce&#x2F;hadoop-mapreduce-examples-3.1.3.jar wordcount a&#x2F;（输入路径） b（输出不能存在路径）</p>
+<p>&#x2F;opt&#x2F;profile.d<br>source &#x2F;etc&#x2F;profire</p>
+<p>关闭防火墙<br>systemctl stop firewalld </p>
+<p>文件（目录） 的上传或下载<br>hadoop fs -put 文件 上传的目录<br>hadoop fs -get 文件 下载的目录</p>
+<p>查看文件的大小<br>hadoop fs -du -s -h &#x2F;input<br>hadoop fs -du -h &#x2F;input （各个文件大小）</p>
+<p>拷贝<br>scp -r 文件 用户名@主机名：文件的地址<br>rsync -av xueqi@hadoop103:&#x2F;opt&#x2F;module&#x2F; .&#x2F; 同步命令</p>
+<p>ssh<br>先是生成公钥和私钥<br>ssh-keygen -t rsa<br>ssh-copy-id xxxx(主机名)</p>
+<p>hdfs namenode -format 重启硬盘 102<br>sbin&#x2F;start-dfs.sh   hadoop102:9870<br>sbin&#x2F;start-yarn.sh  hadoop103:8088<br>历史服务器 19888 102</p>
+<p>hadoop fs -mkdir &#x2F;wcinput 上传<br>Hadoop fs -put 要上传的文件 位置<br>hadoop fs -rm -r -skipTrash &#x2F;wcimput 删除文件</p>
+<p> mapred –daemon stop（start） historyserver 停止历史服务器
+ </p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/09/28/%E5%A4%A7%E6%95%B0%E6%8D%AE/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-09-28T06:49:14.000Z" itemprop="datePublished">Sep 28</time>
-</a>
+    </div>
+</div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/09/28/%E5%A4%A7%E6%95%B0%E6%8D%AE/">大数据</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/09/28/hadoop/" data-id="cl8lmqii30002x85i0nhp6rsy" data-title="hadoop" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/09/28/git/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">git</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
